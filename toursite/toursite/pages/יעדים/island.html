@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../../style/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+    </style>
+
+</head>
+<body>
+    <div class="menu">
+        <div class="topnav" id="myTopnav">
+            <a href="../home.html">דף הבית</a>
+            <a href="../destination.html">יעדים</a>
+            <a href="../details.html">לפרטים והרשמה</a>
+           
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div style="padding-left:16px">
+     
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <!--מצגת-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="../../images/איסלנד/איסלנד-בתי-מלון-1280x500.jpg" style="width:1250px; height: 505px;" />
+
+        </div>
+        <div class="mySlides fade">
+            <img src="../../images/איסלנד/Q7-0Y3A3661-STIFF.jpg" style="width:1250px; height: 505px;" />
+        </div>
+        <div class="mySlides fade">            <img src="../../images/איסלנד/8360247099096980632no.jpg" style="width:1250px; height: 505px;" />
+
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script><p style="text-align:center;">
+        <h1 style="font-size: 40px; text-align: center;font-family: Segoe UI Semibold">איסלנד - ארץ הקרח והאש</h1>
+        <h2 style="font-size: 40px; text-align: center;font-family: Segoe UI Semibold">טבע עוצמתי | נופים יוצאי דופן</h2>
+        <div style="font-size: 40px; text-align: center;font-family: Segoe UI Semibold">
+           לגלות את כוחות הטבע העוצמתיים במלוא תפארתם
+            <br />
+             בנופיה הדרמטיים ועוצרי הנשימה של איסלנד
+        </div>
+    </p>
+    <!-- Photo Grid -->
+             <h1 style="text-align: center; font-family: Segoe UI Semibold; font-size: 50px; ">גלריה</h1>
+    <div class="row" style="height:1490px; padding-bottom:10px;">
+        <div class="column">
+            <img src="../../images/איסלנד/7.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/8360247099096980632no.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/83602530100096980655no.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/83602560100097980670no.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/8360248099096980633no.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/83602520100095980622no.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/6.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/11.jpg" style="width:100%; height:7%;" />
+
+        </div>
+        <div class="column">
+            <img src="../../images/איסלנד/קרחונים.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/colorful_summer_sunrise_in_the_skogar_village_south_iceland_europe_.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/iceland_507x335_tour1.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/iceland_507x335_tour2.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/iceland_gallery_03_small_030919.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/KIRKJUFELLSFOSS-WATERFALLS-ICELAND.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/5.jpg" style="width:100%;height:15%;" />
+        </div>
+        <div class="column">
+            <img src="../../images/איסלנד/Q7-0Y3A3661-STIFF.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/nicolas-j-leclercq-va_nrBLonf8-unsplash-1.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/לאקי.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/גולפוס.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/איסלנד-בתי-מלון-1280x500.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/איסלנד.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/1.jpg" style="width:100%; height:20%;" />
+
+        </div>
+        <div class="column">
+            <img src="../../images/איסלנד/10.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/נהרות-לבה.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/3.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/8360249099096980632no.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/4.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/2.jpg" style="width:100%" />
+            <img src="../../images/איסלנד/9.jpg" style="width: 100%; height: 16%;" />
+
+
+        </div>
+    </div>
+
+</body>
+</html>

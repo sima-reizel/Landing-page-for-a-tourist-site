@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../style/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /*//שורת תפריט*/
+            .topnav a {
+                font-family: Segoe UI Semibold;
+                float: right;
+                display: block;
+                color: black;
+                text-align: center;
+                text-decoration: none;
+                font-size: 17px;
+                padding-left: 230px;
+                padding-right: 230px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                font-size: 26px;
+                margin: 5px;
+           }
+                .topnav a:hover {
+                    background-color:white ;
+                    color: #777474;
+               }         
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: center;                    
+                }       
+        #father {
+            display: grid;
+            grid-template-areas: "bhutan "
+                                 "dubai "
+                                    "india"
+                                  "island "
+                                 "maldiv "
+                                    "bali "
+                                 "uganda ";
+                       grid-gap: 5px;
+                       margin:20px;
+        }
+        #dubai {
+            grid-area: dubai;
+            width: 97%;
+            height: 570px;
+            margin: 10px;
+        }
+        #india {
+            grid-area: india;
+            width: 97%;
+            height: 570px;
+            margin: 10px;
+        }
+        #island {
+            grid-area: island;
+            width: 97%;
+            height: 570px;
+            margin: 10px;
+        }
+        #bhutan {
+            grid-area: bhutan;
+            width: 97%;
+            height: 570px;
+            margin: 10px;
+        }
+        #bali {
+            grid-area: bali;
+            width: 97%;
+            height: 570px;
+            margin: 10px;
+        }
+        #maldiv {
+            grid-area: maldiv;
+            width: 97%;
+            height: 570px;
+            margin: 10px;
+        }
+        #uganda {
+            grid-area: uganda;
+            width: 97%;
+            height: 570px;
+            margin: 10px;
+        }
+        @media screen and (max-width: 1250px) {
+            .topnav a {
+                float: none;
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+        }  
+        @media screen and (max-width: 1000px) {
+            #father .tmuna{
+                height:100%;
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="topnav" id="myTopnav">
+            <a href="home.html">דף הבית</a>           
+            <a href="details.html">לפרטים והרשמה</a>           
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div style="padding-left:16px">      
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>    
+    <div id="father">
+        <a href="יעדים/bouten.html" target="_blank"> <img id="bhutan" class="tmuna"  src="../images/יעדים/צילום מסך 2022-01-01 220605.png" /></a>
+        <a href="יעדים/island.html" target="_blank"><img id="island" class="tmuna" src="../images/יעדים/צילום מסך 2022-01-01 215717.png" /></a>
+        <a href="יעדים/bali.html" target="_blank"> <img id="bali" class="tmuna" src="../images/יעדים/צילום מסך 2022-01-01 232809.png" /></a>
+        <a href="יעדים/uganda.html" target="_blank"> <img id="uganda" class="tmuna" src="../images/יעדים/צילום מסך 2021-12-30 205706.png" /></a>
+        <a href="יעדים/dobai.html" target="_blank"> <img id="dubai" class="tmuna" src="../images/יעדים/273245168.jpg2.jpg" /></a>
+        <a href="יעדים/india.html" target="_blank"><img id="india" class="tmuna" src="../images/הודו/Screenshot 2022-01-20 193017.png" /></a>
+        <a href="יעדים/maldivim.html" target="_blank"><img id="maldiv" class="tmuna" src="../images/יעדים/אאאאא.jpg" /></a>
+    </div>
+</body>
+</html>

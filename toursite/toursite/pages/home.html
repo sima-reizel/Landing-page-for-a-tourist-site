@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../style/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body{
+           background-color: white;
+        }
+        #father{
+            display:flex;
+            align-items:stretch;
+            }
+        .items {
+            margin: 5px;
+            font-family: Segoe UI Semibold;
+            font-size:15px;            
+        }
+        .haarachim{text-align:center;}
+            
+            /*    שורת תפריט*/
+        * {
+            box-sizing: border-box;
+        }
+        .bg-img {
+            background-image: url("171346483.jpg");
+            width: 100%;
+            border: 2px solid white;
+            height: 580px;
+            background-position: center;
+        }        
+   
+        .container {
+            position: absolute;
+            margin: 20px;
+            width: auto;
+            padding:10px;
+        }     
+        .topnav {
+            /*overflow:hidden*//*;*/
+            background-color: #ddd;
+           
+        }        
+            .topnav a {
+                float: right;
+                color: black;
+                text-align: center;
+                padding: 10px 135px;
+                text-decoration: none;
+                font-size: 25px;
+                font-family: Segoe UI Semibold;
+            }
+          
+          
+                .topnav a:hover {
+                    background-color: #ffffff;
+                    color: #808080;
+                }
+               /* המלצות*/
+        * {
+            box-sizing: border-box;
+        }
+        #container2 {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            display: block;
+            height: auto;
+        }
+
+        .items2 {
+            margin: 5px;
+            margin-bottom: 0px;
+            width: 300px;
+            height: 265px;
+            position: relative;
+            width: 50%;
+            max-width: 300px;
+        }      
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5); /* Black see-through */
+            color: #f1f1f1;
+            width: 100%;
+            transition: .5s ease;
+            opacity: 0;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .items2:hover .overlay {
+            opacity: 1;
+        }
+        @media screen and (max-width:1250px) {
+            .topnav a {
+                width: 100%;
+            }
+            #spirit {
+                width: 100%;
+                text-align: center;
+                font-size:30%;
+            }        
+        }
+        @media screen and (max-width:900px) {
+            .topnav a {
+                width: 100%;
+                padding: 5px 5px;
+            }
+           #father {
+               display:unset;
+                width: 100%;
+            }
+            .items {
+                flex: none;
+                width: 100%;
+            }
+            #spirit {
+                width: 100%;
+                text-align: center;
+                font-size: 30%;
+            }
+          
+        }
+        @media screen and (max-width:800px) {
+            .topnav a {
+                width: 100%;
+                 padding: 5px 5px;               
+            }
+            #container2 {
+                display: unset;
+                width: 100%;
+            }
+
+            .items2 {
+                flex: none;
+                width: 100%;
+                margin-right:25%;
+            }
+            #spirit {
+                width: 100%;
+                text-align: center;
+                font-size:100px;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-img">
+        <div class="container">
+            <div class="topnav">
+                <a href="destination.html" target="_blank">יעדים</a>
+                <a href="home.html" >המומלצים</a>
+                <a href="details.html" target="_blank">לפרטים והרשמה</a>
+            </div>
+            <p  id="spirit"style="text-align:center; color:#ffffff; font-family:'Lucida Handwriting'; font-size:200px;"> spirit</p>
+        </div>
+    </div>
+    <h1 class="haarachim" style="font-family: Segoe UI Semibold;font-size:35px;text-align:center;">הערכים של   <label style="text-align: center; color: #26a7b9; font-family: 'Lucida Handwriting'; font-size: 50px;">spirit</label></h1>
+    <div id="father">
+        <div class="items">
+            <h1 style="text-align:center;">יצירתיות</h1><p>
+                בכל דבר שאנו עושים תמיד נחפש את הזוית השונה היחודית המרגשת
+                והמפתיעה ,זו שאיש עוד לא חשב עליה לא אתם לא הקולגות שלנו ואפילו לא אנחנו
+            </p>
+        </div>
+        <div class="items">
+            <h1 style="text-align:center;">התשוקה לאקזוטי</h1><p>
+                כאלה אנחנו נמשכים אל הלא מוכר המסתורי,הממתין לגילוי. זה מה שגורם לדם  בעורקינו לזרום
+                מסעיר לנו את הדימיון ומעורר בנו את התשוקה ליעד הבא
+            </p>
+        </div>
+        <div class="items">
+            <h1 style="text-align:center;">איכות ללא  פשרות</h1><p>
+                יש שיקראו לזה פרפקציוניזם, אנחנו קוראים לזה מחויבות , מחויבות להעניק לכם חווית פרימיום אקסקלוסיבית
+                בכל שלב ושלב בטיול תוך הקפדה בלתי מתפשרת על כל פרט מהגדול לקטן
+            </p>
+        </div>
+        <div class="items">
+            <h1 style="text-align:center;">חוויה בהתאמה אישית</h1><p>
+                אנו אוהבים אנשים סקרנים שאוהבים לחוות את העולם בדרכם הייחודית, אין אתגר שמספק אותנו יותר
+                מלתפור עבורכם את הטיול האולטימיטיבי בהתאם לשאיפות, לחלומות ולצרכים שלכם
+            </p>
+        </div>
+    </div>
+    <h1 class="haarachim" style="font-family: Segoe UI Semibold;">ההמלצות של מומחי <label style="text-align: center; color: #26a7b9; font-family: 'Lucida Handwriting'; font-size: 50px;">spirit</label></h1>
+    <!--ממליצים-->
+    <div id="container2">
+        <div class="items2">
+            <a href="יעדים/uganda.html" target="_blank"> <img src="../images/ההמלצות/15062644869_356a408f15_b.jpg" alt="Avatar" class="image" /></a>
+            <div class="overlay"><p>"לבקר באוגנדה בתקופת פריחת הבמבוק ולצפות בה בפארק הלאומי "shibuya""</p></div>
+        </div>
+        <div class="items2">
+            <a href="יעדים/india.html" target="_blank"> <img src="../images/ההמלצות/AAG_27653713-H1-H4MXL0F-3x2.jpg" alt="Avatar" class="image" /></a>
+            <div class="overlay">
+                <p>"הודו - ארץ המהרג'ות המסתורית, לשבת בצללים מוקפים הילה טהורה'"</p>
+            </div>
+        </div>
+        <div class="items2">
+            <a href="יעדים/bouten.html" target="_blank"> <img src="../images/ההמלצות/archery_competition_office_17656_0.jpg" alt="Avatar" class="image" width="50" /></a>
+            <div class="overlay">
+                <p>"להיות שם כשזה קורה - קרנבל החץ וקשת המסורתי בבהוטן"</p>
+            </div>
+        </div>
+        <div class="items2">
+            <a href="יעדים/maldivim.html" target="_blank"> <img src="../images/ההמלצות/Beach_Club_0122.jpg" alt="Avatar" class="image" /></a>
+            <div class="overlay">
+                <p>"חובה לבקר בחוף anse source d'argent שנמצא במלדיביים ונחשב לאחד מחופי הים היפים והמיוחדים בעולם" </p>
+            </div>
+        </div>
+    </div>
+    <h1 class="haarachim" style="font-family: Segoe UI Semibold;">אצלנו ב- <label style="text-align: center; color: #26a7b9; font-family: 'Lucida Handwriting'; font-size: 50px;">spirit</label>אומרים:</h1>
+    <img src="../images/צילום מסך 2022-01-01 223756.png" style="width:100%; height:100%;" />
+</body>
+</html>

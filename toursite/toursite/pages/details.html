@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../style/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            font-family: Segoe UI Semibold, Helvetica, sans-serif;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        /*טופס*/
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+            /* Add a background color when the inputs get focus */
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+        /* Set a style for all buttons */
+        button {
+             color: #26a7b9;
+            background-image: url('file:///C:\Users\simag\home work\html\פרויקט\toursite\toursite\images\צילום מסך 2021-12-29 231755.png');
+            padding: 14px 20px;
+            margin: 8px 0;
+            border:none;
+           cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+            button:hover {
+                opacity: 1;
+            }
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+        }
+        /* Add padding to container elements */
+        .container {
+            padding: 16px;
+        }
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: #474e5d;
+            padding-top: 50px;
+        }
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+        /* Style the horizontal ruler */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        /* The Close Button (x) */
+        .close {
+            position: absolute;
+            right: 35px;
+            top: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            color: #f1f1f1;
+        }
+            .close:hover,
+            .close:focus {
+                color: #f44336;
+                cursor: pointer;
+            }
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+                width: 100%;
+            }
+        }
+        /*    טבלה
+        */ table {
+            direction: rtl;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+           /* border: 1px solid #ddd;*/
+        }
+        th, td {
+            text-align: center;
+            padding: 30px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+        /*  פרוט על ספיריט*/       
+        .container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+            .container img {
+                vertical-align: middle;
+            }
+            .container .content {
+                position: absolute;
+                bottom: 0;
+                background: rgb(0, 0, 0); /* Fallback color */
+                background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+                color: #f1f1f1;
+                width: 100%;
+            }
+        /*//שורת תפריט*/
+            .topnav a {
+                float: right;
+                display: block;
+                color: #26a7b9;
+                text-align: center;
+                text-decoration: none;
+                font-size: 17px;
+                padding-left: 260px;
+                padding-right: 260px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                font-size: 26px;
+            }
+        @media screen and (max-width: 1200px) {
+                .topnav a {
+                    float: none;
+                    display: block;
+                    text-align:center;
+                    width:100%;
+                }
+        }
+        #fa {
+            display: flex;
+            align-items: stretch;
+        }
+        .ch{
+            width:100%;
+        }
+    </style>   
+</head>
+<body>
+    <div class="menu">
+        <div class="topnav" id="myTopnav">
+            <a href="home.html">דף הבית</a>
+            <a href="destination.html">יעדים</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div style="padding-left:16px">
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <!--פרטי ספיריט בתמונה-->
+    <div class="container">
+        <img src="171346289.jpg" alt="Notebook" style="width:100%;height:100%;">
+        <div class="content">
+            <h1 style="text-align:center; color:#ffffff; font-family:'Lucida Handwriting'; font-size:50px;">spirit</h1>
+            <p style="font-family: Segoe UI Semibold; text-align:center;">
+                ספיריט הפקות עולם"היא חברת תיירות"
+                בינלאומית המשלבת יזמות וחדשנות עם ניסיון רב- שנים
+
+                בפיתוח יעדים אקזוטיים וטיסות ישירות ובלעדיות לצד טיולי תמריץ והפקות יחודיות למגזר העסקי וטיולי
+                יוקרה למטייל העצמאי
+
+                מאז הוקמה ב-2006 ספיריט
+                מוכיחה שאין גבול ליכולת לתעוזה וליצירתיות
+                כמו גם לדימיון על כך יעדו אלפי
+                מטיילים שטסים איתה מידי שנה לכל יעד בעולם
+
+                בין עם לחעדים אקזוטיים לטיולי תמריץ או למסע עצמאי ,השאיפה להמשיך
+                להוביל את המטייל לחויות חדשות מובילה את
+                ספיריט להמשיך  לחפש את היעד הבא בעולם
+            </p>
+        </div>
+    </div>
+    <!--טבלה-->
+    <h3 style="text-align: center; font-family: Segoe UI Semibold;font-size:30px;"> <label style="text-align: center; color: #26a7b9; font-family: 'Lucida Handwriting'; font-size: 50px;">spirit</label> בארץ</h3>
+    <div style="overflow-x:auto;">
+        <table>
+            <tr>
+                <th>עיר</th>
+                <th>כתובת</th>
+                <th>טלפון</th>
+
+            </tr>
+            <tr>
+                <td>תל אביב</td>
+                <td>אלנבי 4</td>
+                <td>03-6768854</td>
+
+     </tr>
+            <tr>
+                <td>הרצליה</td>
+                <td>הרצל 97</td>
+                <td>03-6734445</td>
+
+            </tr>
+            <tr>
+                <td>ראשון לציון</td>
+                <td>כ"ט בנובמבר</td>
+                <td>03-50000017</td>
+
+            </tr>
+        </table>
+    </div>
+
+    <!--//טופס-->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:100%;height:100%;">
+        <img src="../images/צילום מסך 2021-12-29 231755.png" style="width:100%;height:100%;" />
+        <p style="font-family: Segoe UI Semibold; font-size: 40px;">להצטרפות למשפחת <label style="text-align: center; color: #26a7b9; font-family: 'Lucida Handwriting'; font-size: 50px;">  spirit</label> </p>
+    </button>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>מועדון הלקוחות שלנו</h1>
+                <p>מלא את הטופס ליצירת חשבון אישי</p>
+                <hr>
+                <label for="email"><b>אימייל</b></label>
+                <input type="text" placeholder="אימייל" name="email" required>
+
+                <label for="psw"><b>סיסמא</b></label>
+                <input type="password" placeholder="הקש סיסמא" name="psw" required>
+
+                <label for="psw-repeat"><b>אימות סיסמא</b></label>
+                <input type="password" placeholder="שחזר סיסמא" name="psw-repeat" required>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> זכור אותי
+                </label>
+                <p> ביצירת החשבון הנך מתחייב למדיניות spirit </p>
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">ביטול</button>
+                    <button type="submit" class="signupbtn">להרשמה</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <h3  style="text-align: center; font-family: Segoe UI Semibold; font-size: 30px; "> <label style="text-align: center; color: #26a7b9; font-family: 'Lucida Handwriting'; font-size: 50px;">  spirit</label>עובדים עם החברות המובילות :</h3>
+    <div id="fa">
+    <div class="ch">
+        <ul>
+            <li>
+                <img src="../images/Screenshot 2022-01-24 120658.png" style="width:100%;"/>
+            </li>
+            <li>
+                <img src="../images/Screenshot 2022-01-24 120618.png"style="width:100%; "/>
+            </li>
+            <li>
+                <img src="../images/Screenshot 2022-01-24 120643.png" style="width:100%;"/>
+            </li>
+        </ul>
+    </div>
+    <div class="ch">
+        <ul>
+            <li>
+                <img src="../images/Screenshot 2022-01-24 122041.png" style="width:100%;"/>
+            </li>
+            <li>
+                <img src="../images/Screenshot 2022-01-24 122059.png" style="width:100%;"/>
+            </li>
+            <li>
+                <img src="../images/Screenshot 2022-01-24 122117.png" style="width:100%;"/>
+            </li>
+        </ul>
+    </div> 
+    <div class="ch">
+        <ul>
+            <li>
+                <img src="../images/Screenshot 2022-01-24 122139.png" style="width:100%;"/>
+            </li>
+            <li>
+                <img src="../images/Screenshot 2022-01-24 122152.png" style="width:100%;"/>
+            </li>
+            <li>
+                <img src="../images/Screenshot 2022-01-24 120643.png" style="width:100%;"/>
+            </li>
+        </ul>
+    </div>
+       </div>
+</body>
+</html>

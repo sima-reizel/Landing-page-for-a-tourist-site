@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../../style/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        @media screen and (max-width:1200px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 150px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+                margin-top: 1px;
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 150px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+                margin-top: 2900px;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 100px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+                margin-top: 11600px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!--//תפריט-->
+
+    <div class="menu">
+        <div class="topnav" id="myTopnav">
+            <a href="../home.html">דף הבית</a>
+            <a href="../destination.html">יעדים</a>
+            <a href="../details.html">לפרטים והרשמה</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div style="padding-left:16px">
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+   <!--מצגת-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="../../images/מלדיבים/74abb2f5672da6fd683cc86c6057bfe0.jpg"class="show" style="width: 1250px; height: 505px;" />
+        </div>
+        <div class="mySlides fade">
+            <img src="../../images/מלדיבים/248654839.jpg" class="show"style="width: 1250px; height:505px;" />
+        </div>
+        <div class="mySlides fade">
+            <img src="../../images/מלדיבים/2018-09-04-03-58-37-Zuri-Beach-Sunbeds.jpg"class="show" style="width:1250px; height: 505px;" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script><p style="text-align:center;">
+        <h1 style="font-size: 40px; text-align: center; font-family: Segoe UI Semibold;">האיים המלדיביים </h1>
+        <h2 style="font-size: 40px; text-align: center; font-family: Segoe UI Semibold;">חופים מהפנטים | לגעת באינסוף </h2>
+        <div style="font-size: 40px; text-align: center; font-family: Segoe UI Semibold;">           
+     חופים מושלמים  , פעילויות אקסרים בים וביבשה ומעל הכל -
+            <br />
+            ריזורטים מפנקים שנרקחו מהחומרים שמרכיבים 
+            פנטזיות<br /> הטובלים במי האוקיינוס ההודי
+        </div>
+    </p>
+    <!-- Photo Grid -->
+    <h1 style="text-align: center; font-family: Segoe UI Semibold; font-size: 50px; ">גלריה</h1>
+    <div class="row" style="height:2385px; padding-bottom:10px;">
+        <div class="column">
+            <img src="../../images/מלדיבים/09-SERENE-PAVILIONS-OCEAN-SIDE-1.jpg" />
+            <img src="../../images/מלדיבים/106840040.jpg" />
+            <img src="../../images/מלדיבים/110759059.jpg" />
+            <img src="../../images/מלדיבים/110876334-2.jpg" />
+            <img src="../../images/מלדיבים/128213586.jpg" />
+            <img src="../../images/מלדיבים/128233751.jpg" />
+            <img src="../../images/מלדיבים/128584525.jpg" />
+            <img src="../../images/מלדיבים/171813040.jpg" />
+            <img src="../../images/מלדיבים/171813076.jpg" />
+            <img src="../../images/מלדיבים/176366031-3.jpg" />
+            <img src="../../images/מלדיבים/מסאז-בגן-עדן.jpg" height="290"/>
+        </div>
+        <div class="column">
+            <img src="../../images/מלדיבים/לאכול-מתחת-למים.jpg" />
+            <img src="../../images/מלדיבים/17798617.jpg" />
+            <img src="../../images/מלדיבים/19605809.jpg" />
+            <img src="../../images/מלדיבים/19605826.jpg" />
+            <img src="../../images/מלדיבים/2018-01-16-10-35-00-ZURI-ZANZIBAR-REAL-PICTURE-VIEW.jpg" />
+            <img src="../../images/מלדיבים/2018-07-19-04-03-13-Ocean-Front-Suite1.jpg" />
+            <img src="../../images/מלדיבים/2018-09-04-03-58-21-Zrui-Beach.jpg" />
+            <img src="../../images/מלדיבים/2018-09-04-03-58-37-Zuri-Beach-Sunbeds.jpg" />
+            <img src="../../images/מלדיבים/248654839.jpg" />
+            <img src="../../images/מלדיבים/גלריה-מלדיבים9.jpg" />
+            <img src="../../images/מלדיבים/17740300.jpg" style="height:10%;" />
+
+        </div>
+        <div class="column">
+            <img src="../../images/מלדיבים/298361450.jpg" />
+            <img src="../../images/מלדיבים/31177484.jpg" />
+            <img src="../../images/מלדיבים/74abb2f5672da6fd683cc86c6057bfe0.jpg" />
+            <img src="../../images/מלדיבים/84207442-2.jpg" />
+            <img src="../../images/מלדיבים/85515007.jpg" />
+            <img src="../../images/מלדיבים/89169322.jpg" />
+            <img src="../../images/מלדיבים/93798323.jpg" />
+            <img src="../../images/מלדיבים/94147216.jpg" />
+            <img src="../../images/מלדיבים/94666159.jpg" />
+            <img src="../../images/מלדיבים/aerial-view.jpg" />
+            <img src="../../images/מלדיבים/גלריה-מלדיבים-5.jpg" />
+            <img src="../../images/מלדיבים/גלריה-מלדיבים7.jpg " style="height:6%;" />
+        </div>
+        <div class="column">
+            <img src="../../images/מלדיבים/גלריה-מלדיבים15.jpg" />
+            <img src="../../images/מלדיבים/Hi_AVEL_82283684_AVEL_Island_Aerial_05_G_A_H.jpg" />
+            <img src="../../images/מלדיבים/MAL_956_original-2.jpg" />
+            <img src="../../images/מלדיבים/moofushi-maldives-beach-view-19-2.jpg" />
+            <img src="../../images/מלדיבים/VARU-BY-ATMOSPHERE-MALDIVES-3.jpg" />
+            <img src="../../images/מלדיבים/zn9ozugzakwludjku6zoedp0nxoles7x.jpg" />
+            <img src="../../images/מלדיבים/ארוחת-רומנטית-על-החוף.jpg" />
+            <img src="../../images/מלדיבים/גלריה-מלדיבים10.jpg" />
+            <img src="../../images/מלדיבים/גלריה-מלדיבים11.jpg" />
+            <img src="../../images/מלדיבים/גלריה-מלדיבים13.jpg" />
+            <img src="../../images/מלדיבים/גלריה-מלדיבים16.jpg" />
+            <img src="../../images/מלדיבים/גלריה-מלדיבים4.jpg" />
+            <img src="../../images/מלדיבים/6666.jpg" style="height:7%;" />
+
+        </div>
+    </div>
+    <p></p>
+   
+    
+    <div id="vidio">
+        <video width="1200" height="550" autoplay muted loop id="myvidio" class="vid">
+            <source src="../../videos/maldiv.mp4" type="video/mp4" />
+        </video>
+    </div>
+</body>
+</html>

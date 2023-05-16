@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../../style/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        @media screen and (max-width:1200px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 150px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+                margin-top: 1px;
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 150px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+                margin-top: 1600px;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 100px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+                margin-top: 7400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="topnav" id="myTopnav">
+            <a href="../home.html">דף הבית</a>
+            <a href="../destination.html">יעדים</a>
+            <a href="../details.html">לפרטים והרשמה</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div style="padding-left:16px">
+      
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <!--מצגת-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="../../images/בהוטן/Robert GLOD_1.jpg" style="width:1250px; height: 505px;" />
+
+        </div>
+        <div class="mySlides fade">
+            <img src="../../images/בהוטן/bhutan-2502780_1920.jpg"style="width:1250px; height: 505px;" />
+        </div>
+        <div class="mySlides fade">
+            <img src="../../images/בהוטן/1111-3ca1gnchh1x310li7emf40.jpg" style="width:1250px; height: 505px;" />
+           </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <p style="text-align:center;">
+        <h1 style="font-size: 40px; text-align: center;font-family: Segoe UI Semibold">בהוטן - הממלכה על ההר</h1>
+        <h2 style="font-size: 40px; text-align: center;font-family: Segoe UI Semibold ">חבל ארץ בראשיתי | ממלכה מסקרנת</h2>
+        <div style="font-size: 40px; text-align: center;font-family: Segoe UI Semibold ">           
+            גלו איתנו את נפלאות הממלכה המסתורית בהרי ההימלאיה
+            <br />
+            המאכלסת את האנשים המאושרים בעולם
+        </div>
+    </p>
+    <h1 style="text-align: center; font-family: Segoe UI Semibold; font-size: 50px; ">גלריה</h1>
+    <!-- Photo Grid -->
+    <div class="row" style="height: 1464px; padding-bottom: 10px;  ">
+        <div class="column">
+            <img src="../../images/בהוטן/21-04504.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/33-04525.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/1111-3ca1gnchh1x310li7emf40.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/bhutan-23.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/bhutan-2502780_1920.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/bhutan_800_050619.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/image001.jpg" style="width:100%" />
+        </div>
+        <div class="column">
+            <img src="../../images/בהוטן/Robert GLOD_1.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/FL15TAKIN2_1631995g.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/F0_0320_0000_1105_8Sigiriya(1).jpg" style="width:100%" />
+            <img src="../../images/בהוטן/Cloud-hidden_whereabouts_unknown_Paro_Bhutan.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/buddhist-temple-golden-pavilion-japan-34146-1.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/travel-3296588_1920.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/bhutan-2830244_1920.jpg" style="width:100%" />
+        </div>
+        <div class="column">
+            <img src="../../images/בהוטן/לחוות-את-האי-באופניים-2.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/lee-pigott-629658-unsplash_optimized.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/buddhist-737275_1280-e1556870221875.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/tigers-nest-2691190_1920.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/prayer-flags-739712_1920.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/bridge-3344712_1920.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/2.jpg" style="width:100%;height:8%;" />
+        </div>
+        <div class="column">
+            <img src="../../images/בהוטן/lobby1-8.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/yu-kato-714571-unsplash_optimized.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/לרקוד-על-החוף.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/archery_competition_office_17656_0.jpg" style="width:100%" />
+            <img src="../../images/בהוטן/Goran Hoglund.jpg" style="width:100%" />
+
+
+
+        </div>
+    </div>
+   <p></p>
+   <p></p>
+   <p></p>
+
+    <div id="vidio">
+        <video width="1200" height="550" autoplay muted loop id="myvidio" class="vid">
+            <source src="../../videos/%d7%91%d7%94%d7%95%d7%98%d7%9f.mp4" type="video/mp4" />
+        </video>
+    </div>
+</body>
+</html>

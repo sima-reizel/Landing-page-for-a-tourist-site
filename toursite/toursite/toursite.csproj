@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="images\בהוטן\" />
+    <Folder Include="images\מלדיבים\" />
+    <Folder Include="images\אוגנדה\" />
+    <Folder Include="images\באלי\" />
+    <Folder Include="images\הודו\" />
+  </ItemGroup>
+
+</Project>

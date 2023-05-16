@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../../style/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .vid {
+            position: relative;
+        }
+        @media screen and (max-width:1200px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 150px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+                margin-top: 1px;
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 150px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+                margin-top: 1900px;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 100px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+                margin-top:7200px;
+            }
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="topnav" id="myTopnav">
+            <a href="../home.html">דף הבית</a>
+            <a href="../destination.html">יעדים</a>
+            <a href="../details.html">לפרטים והרשמה</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div style="padding-left:16px">
+      
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <!--מצגת-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="../../images/אוגנדה/גלריה12.jpg" style="width:1250px; height: 505px;" />
+        </div>
+        <div class="mySlides fade">
+            <img src="../../images/אוגנדה/Kibale-cretar-l.jpg" style="width:1250px; height: 505px;" />
+        </div>
+        <div class="mySlides fade">
+            <img src="../../images/אוגנדה/lake-albert-2103890_1920-1.jpg" style="width:1250px; height: 505px;" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script><p style="text-align:center;">
+        <h1 style="font-size: 40px; text-align: center; font-family: Segoe UI Semibold">אוגנדה - פנינת אפריקה </h1>
+        <h2 style="font-size: 40px; text-align: center; font-family: Segoe UI Semibold">נופים מהפנטים | ספארי פראי | תרבות סוחפת </h2>
+        <div style="font-size: 40px; text-align: center; font-family: Segoe UI Semibold">
+            פלאי הטבע של אפריקה האמיתית , העטופים בחויית פינוק אקסקלוסיבית
+        </div>
+    </p>
+    <!-- Photo Grid -->
+    <h1 style="text-align: center; font-family: Segoe UI Semibold; font-size: 50px; ">גלריה</h1>
+    <div class="row" style="height:1455px; padding-bottom:10px;">
+        <div class="column">
+            <img src="../../images/אוגנדה/גורילות.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/Image00006.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/alex-radelich-rtCfGTI7nCA-unsplash.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/alleppey-3170776_1920.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/bill-wegener-7MD4DR9jbP0-unsplash.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/baraza-resort-and-spa-zanzibar_15317406973.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/bakers-lodge-murchison-falls-uganda-timbuktu-travel.jpeg" style="width:100%" />
+        </div>
+        <div class="column">
+            <img src="../../images/אוגנדה/buffet-315691_1280.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/d790d795d792d7a0d793d794-d794d7a4d7a0d799d7a0d794-d7a9d79c-d790d7a4d7a8d799d7a7d794-370x300.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/DSC_5885-small.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/fredrik-ohlander-609051-unsplash.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/Uganda-Lake-Victoria-Osannidde-Kids-Fruit.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/baraza-resort-and-spa-zanzibar_15317406974.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/ipd_camps21.jpg" style="width:100%;height:13%;" />
+        </div>
+        <div class="column">
+            <img src="../../images/אוגנדה/Kibale-cretar-l.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/MV3A5060.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/lake-albert-2103890_1920-1.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/Mamounia_AJM_ItalienRestaurant_View2_ok.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/MCUM4-pg1poqo6wn15er59pxdd9c17c493lkhzl9pojcaku8.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/kimson-doan-37947-unsplash_optimized.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/paola-blaskovic-1367168-unsplash.jpg" style="width: 100%; height: 18%;" />
+        </div>
+        <div class="column">
+            <img src="../../images/אוגנדה/SR001928.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/uganda_omer_3.jp_.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/hills-2836301_1920.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/_big_A8DC15AC347978DC38ED4D0D3B154097.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/גלריה12.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/חיות-נדירות-בסיישל.jpg" style="width:100%" />
+            <img src="../../images/אוגנדה/טיול-לאוגנדה-אל-השמורות-היפות-ביותר-סליידר.jpg" style="width: 100%; height:11%;" />
+        </div>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div id="vidio">
+        <video width="1200" height="550" autoplay muted loop id="myvidio" class="vid">
+            <source src="../../videos/uganda.mp4" type="video/mp4" />
+        </video>
+    </div>
+</body>
+</html>

@@ -1,0 +1,213 @@
+﻿body {
+    direction:rtl;
+}
+#vidio {
+    background-color: black;
+}
+
+@media screen and (max-width: 1250px) {
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}  
+    <!-- עיצוב גריד-- > * {
+    box-sizing: border-box;
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    /*   -ms-flex-wrap: wrap;*/ /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 3px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 22%;
+    max-width: 25%;
+    padding: 0 2px;
+}
+
+    .column img {
+        margin-top: 4px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+/*    Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        /* -ms-flex: 50%;*/
+        flex: 48%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        /* -ms-flex: 100%;*/
+        flex: 98%;
+        max-width: 100%;
+    }
+}
+/*מצגת*/
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container {
+  /*  max-width: 1000px;*/
+    position: relative;
+    margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    left:0;
+    border-radius: 3px 0 0 3px;
+}
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 1250px) {
+    .prev, .next {
+        font-size: 11px
+    }
+    .show {
+        width:500px;
+    }
+        
+    }
+
+/*//שורת תפריט*/
+.menu {
+    margin-bottom: 0;
+    font-family: Segoe UI Semibold, Helvetica, sans-serif;
+    direction: rtl;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+   .topnav a {
+        float: right;
+        display: block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        padding-left: 149px;
+        padding-right: 149px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 26px;
+    }
+        .topnav a:hover {
+            background-color: white;
+            color: #26a7b9;
+            border: 1px solid #26a7b9;
+        }
+     .topnav .icon {
+        display: none;
+    }
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+        width:100%;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+}
+

@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../../style/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        @media screen and (max-width:1200px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 150px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+                margin-top: 1px;
+            }
+        } 
+        @media screen and (max-width:800px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 150px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+               margin-top:1600px;
+            }
+        } 
+        @media screen and (max-width:600px) {
+            #myvidio {
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                margin-right: 100px;
+                background-color: black;
+            }
+
+            #vidio {
+                width: 100%;
+                margin-top: 7400px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="topnav" id="myTopnav">
+            <a href="../home.html">דף הבית</a>
+            <a href="../destination.html">יעדים</a>
+            <a href="../details.html">לפרטים והרשמה</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div style="padding-left:16px">
+       
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <!--מצגת-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="../../images/באלי/גלריה-באלי7.jpg" style="width:1250px; height: 505px;"/>
+        </div>
+        <div class="mySlides fade">
+            <img src="../../images/באלי/גלריה-באלי12.jpg" style="width:1250px; height: 505px;" />
+        </div>
+        <div class="mySlides fade">
+            <img src="../../images/באלי/גלריה-באלי6.jpg" style="width:1250px; height: 505px;" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script><p style="text-align:center;">
+                 <h1 style="font-size: 40px; text-align: center;font-family: Segoe UI Semibold" >באלי - האי הקסום</h1>
+                 <h2 style="font-size: 40px; text-align: center;font-family: Segoe UI Semibold" >חופי ים מדהימים | תרבות ססגונית</h2>
+                 <div style="font-size: 40px; text-align: center;font-family: Segoe UI Semibold" >
+                     לגלות את אוצרות הטבע והתרבות של גן העדן הבאלינזי
+                 </div>
+    </p>
+    <!-- Photo Grid -->
+             <h1 style="text-align: center; font-family: Segoe UI Semibold; font-size: 50px; ">גלריה</h1>
+    <div class="row" style="height:1500px; padding-bottom:10px;">
+        <div class="column">
+            <img src="../../images/באלי/1_Tegallalang Rice Terrace_Sergii Gulenok_1.jpg" style="width:100%">
+            <img src="../../images/באלי/גלריה-מאוריציוס-14-2.jpg" style="width:100%" />
+            <img src="../../images/באלי/גלריה-מאוריציוס16.jpg" style="width:100%" />
+            <img src="../../images/באלי/70fdf4007af28030f6aa688d65467784.jpg" style="width:100%">
+            <img src="../../images/באלי/bali (2).jpg" style="width:100%">
+            <img src="../../images/באלי/bali (1).jpg" style="width:100%">
+            <img src="../../images/באלי/גלריה-באלי8.jpg" style="width:100%" />
+            <img src="../../images/באלי/1.jpg" style="width:100%; height:15%;" />
+        </div>
+        <div class="column">
+            <img src="../../images/באלי/bali.jpg" style="width:100%" />
+            <img src="../../images/באלי/kids-1387209_1920.jpg" style="width:100%" />
+            <img src="../../images/באלי/Pura Kehen Temple_xiquinhosilva.jpg" style="width:100%" />
+            <img src="../../images/באלי/Ulun Danu Beratan Temple_Sergii Gulenok.jpg" style="width:100%" />
+            <img src="../../images/באלי/tee-1028655_1920.jpg" style="width:100%" />
+            <img src="../../images/באלי/srilanaka-3649199_1920.jpg" style="width:100%" />
+            <img src="../../images/באלי/2.jpg" style="width:100%; height:18%;" />
+        </div>
+        <div class="column">
+            <img src="../../images/באלי/Uma-Punakha-Hotel-Exterior-view-of-Uma-Punakha-1.jpg" style="width:100%" />
+            <img src="../../images/באלי/ZOAPC_LobbyBar_1.jpg" style="width:100%" />
+            <img src="../../images/באלי/גלריה-באלי12.jpg" style="width:100%" />
+            <img src="../../images/באלי/גלריה-באלי11.jpg" style="width:100%" />
+            <img src="../../images/באלי/ZOAPC_EXT_New-Buildings_3.jpg" style="width:100%" />
+            <img src="../../images/באלי/yasasi-rajapakse-1215159-unsplash.jpg" style="width:100%" />
+            <img src="../../images/באלי/Uma-Punakha-Wellness-COMO-Shambhala-Retreat-Building-1.jpg" style="width:100%" />
+            <img src="../../images/באלי/גלריה-באלי5.jpg" style="width:100%; height:9%;" />
+        </div>
+        <div class="column">
+            <img src="../../images/באלי/גלריה-באלי21.jpg" style="width:100%" />
+            <img src="../../images/באלי/גלריה-באלי7.jpg" style="width:100%" />
+            <img src="../../images/באלי/גלריה-באלי5.jpg" style="width:100%" />
+            <img src="../../images/באלי/גלריה-באלי6.jpg" style="width:100%" />
+            <img src="../../images/באלי/גלריה-באלי16.jpg" style="width:100%" />
+            <img src="../../images/באלי/גלריה-באלי-15.jpg" style="width:100%" />
+            <img src="../../images/באלי/טבע-בראשיתי.jpg" style="width:100%" />
+            <img src="../../images/באלי/70fdf4007af28030f6aa688d65467784.jpg" style="width:100%; height:14%;" />
+
+        </div>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <div id="vidio">
+        <video width="1200" height="550" autoplay muted loop id="myvidio" class="vid">
+            <source src="../../videos/bali.mp4" type="video/mp4" />
+        </video>
+    </div>
+</body>
+</html>
